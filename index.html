@@ -6,7 +6,22 @@
 </head>
 
 <body style="background-color: #fcfcfc;">
+    
+
     <div style="margin: 10%; max-width: 80%;">
+        <form method="post" enctype="multipart/form-data" action="insertar.php" class="ccontenido">
+            <div class="form-group">
+                <input type="text" pattern="[A-Za-z].{0,30}" class="form-control " name="title"
+                    placeholder="Title" required title="30 characters max">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            </br>
+            <button type="submit" class="btn btn-primary" id="button">Confirmar</button>
+
+        </form>
+    </div>
+    <!--
+<div style="margin: 10%; max-width: 80%;">
         <form method="post" enctype="multipart/form-data" action="insertar.php" class="ccontenido">
             <p class="error font-weight-normal" style="color: red"> * Campos obligatorios </p>
             <div class="row">
@@ -49,6 +64,8 @@
 
         </form>
     </div>
+    -->
+    
 </body>
 
 </html>
